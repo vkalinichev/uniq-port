@@ -1,9 +1,14 @@
-# uniq-port
+# uniq-port [![Travis][travis-badge]][travis-link] [![npm][npm-badge]][npm-link] [![bitHound][bithound-dep-badge]][bithound-link] [![bitHound][bithound-dev-badge]][bithound-link]
+
+[travis-badge]: https://img.shields.io/travis/vkalinichev/uniq-port.svg
+[travis-link]: https://travis-ci.org/vkalinichev/uniq-port
+[npm-badge]: https://img.shields.io/npm/v/uniq-port.svg
+[npm-link]: https://www.npmjs.com/package/uniq-port
+[bithound-dep-badge]: https://img.shields.io/bithound/dependencies/github/vkalinichev/uniq-port.svg
+[bithound-dev-badge]: https://img.shields.io/bithound/devDependencies/github/vkalinichev/uniq-port.svg
+[bithound-link]: https://www.bithound.io/github/vkalinichev/uniq-port
+
 Generates an unique port-number for in safe range (1025-65535) 
-[![Travis](https://img.shields.io/travis/vkalinichev/uniq-port.svg)]()
-[![npm](https://img.shields.io/npm/v/uniq-port.svg)]()
-[![bitHound](https://img.shields.io/bithound/dependencies/github/vkalinichev/uniq-port.svg)]()
-[![bitHound](https://img.shields.io/bithound/devDependencies/github/vkalinichev/uniq-port.svg)]()
 
 ## Install
 #### NPM
