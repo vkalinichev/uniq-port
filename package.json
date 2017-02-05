@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Generates a string-based unique port number",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE.md",
+    "README.md"
+  ],
   "repository": {
     "url": "git+https://github.com/vkalinichev/uniq-port.git",
     "type": "git"
