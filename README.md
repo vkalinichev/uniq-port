@@ -1,7 +1,9 @@
-# uniq-port [![npm][npm-badge]][npm-link] [![Travis][travis-badge]][travis-link] [![bitHound][bithound-code-badge]][bithound-link] [![bitHound][bithound-dev-badge]][bithound-link]
+# uniq-port [![npm][npm-badge]][npm-link] [![Travis][travis-badge]][travis-link] [![Codecov][codecov-badge]][codecov-link] [![bitHound][bithound-code-badge]][bithound-link] [![bitHound][bithound-dev-badge]][bithound-link]
 
 [travis-badge]: https://img.shields.io/travis/vkalinichev/uniq-port.svg
 [travis-link]: https://travis-ci.org/vkalinichev/uniq-port
+[codecov-badge]: https://img.shields.io/codecov/c/github/vkalinichev/uniq-port.svg
+[codecov-link]: https://codecov.io/gh/vkalinichev/uniq-port
 [npm-badge]: https://img.shields.io/npm/v/uniq-port.svg
 [npm-link]: https://www.npmjs.com/package/uniq-port
 [bithound-code-badge]: https://img.shields.io/bithound/code/github/vkalinichev/uniq-port.svg
