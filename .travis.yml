@@ -5,7 +5,14 @@ node_js:
     - "6"
     - "4"
 
+script:
+    - npm test
+    - npm run coverage
+
 cache:
     yarn: true
     directories:
         - node_modules
+
+notifications:
+  email: falses
