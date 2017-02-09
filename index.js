@@ -8,7 +8,7 @@ module.exports = function uniqPort( string ) {
     if ( typeof string === 'number' ) {
         string = '' + string
     } else if ( typeof string !== 'string' ) {
-        throw new Error()
+        throw new TypeError( '`name` must be a string or a number' )
     }
 
     for ( var i = 0, offset = 0; i < string.length; i++ ) {
