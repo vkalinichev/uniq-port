@@ -3,56 +3,41 @@
 var test = require( 'ava' )
 var uniqPort = require( '.' )
 
-test( 'generate port for `uniq-port`', function ( t ) {
-    var actual = uniqPort( 'uniq-port' )
-    t.is( actual, 54115 )
-})
+var correctValues = {
+    'uniq-port': 54115,
+    'your-unique-app-name': 65293,
+    'uniq': 56645,
+    'port': 49619,
+    '': 49152,
+    31337: 50433
+}
 
-test( 'generate port for `your-unique-app-name`', function ( t ) {
-    var actual = uniqPort( 'your-unique-app-name' )
-    t.is( actual, 65293 )
-})
+var incorrectValues = [
+    {},
+    [],
+    null,
+    undefined
+]
 
-test( 'generate port for `uniq`', function ( t ) {
-    var actual = uniqPort( 'uniq' )
-    t.is( actual, 56645 )
-})
 
-test( 'generate port for `port`', function ( t ) {
-    var actual = uniqPort( 'port' )
-    t.is( actual, 49619 )
-})
+Object.keys( correctValues ).forEach( function ( name ) {
 
-test( 'generate port for an empty string', function ( t ) {
-    var actual = uniqPort( '' )
-    t.is( actual, 49152 )
-})
+    test( 'generates port for `' + name + '`', function ( t ) {
+        var expected = correctValues[ name ];
 
-test( 'generate port for number', function ( t ) {
-    var actual = uniqPort( 31337 )
-    t.is( actual, 50433 )
-})
-
-test( 'throw an error on object', function ( t ) {
-    t.throws( function () {
-        uniqPort( {} )
+        t.is( uniqPort( name ), expected );
     })
-})
 
-test( 'throw an error on array', function ( t ) {
-    t.throws( function () {
-        uniqPort( [] )
-    })
-})
+} )
 
-test( 'throw an error on null', function ( t ) {
-    t.throws( function () {
-        uniqPort( null )
-    })
-})
+incorrectValues.forEach( function ( type ) {
 
-test( 'throw an error on undefined', function ( t ) {
-    t.throws( function () {
-        uniqPort()
-    })
-})
+    test( 'throws on ' + JSON.stringify( type ), function ( t ) {
+        var error = t.throws( function () {
+            uniqPort( type )
+        }, TypeError )
+
+        t.is( error.message, '`name` must be a string or a number' );
+    } )
+
+} )
