@@ -6,7 +6,7 @@ var MAX = 65535
 module.exports = function uniqPort( string ) {
 
     if ( typeof string === 'number' ) {
-        string = '' + string
+        string += ''
     } else if ( typeof string !== 'string' ) {
         throw new TypeError( '`name` must be a string or a number' )
     }
