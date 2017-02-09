@@ -4,8 +4,8 @@
   "description": "Generates a string-based unique port number",
   "main": "index.js",
   "scripts": {
-    "coverage": "codecov",
-    "test": "nyc --reporter lcov ava"
+    "coverage": "nyc --reporter lcov ava &&codecov",
+    "test": "nyc ava"
   },
   "files": [
     "index.js",
