@@ -8,8 +8,7 @@ var correctValues = {
     'your-unique-app-name': 65293,
     'uniq': 56645,
     'port': 49619,
-    '': 49152,
-    31337: 50433
+    '': 49152
 }
 
 var incorrectValues = [
@@ -29,6 +28,11 @@ Object.keys( correctValues ).forEach( function ( name ) {
     })
 
 } )
+
+
+test( 'generates port for number (31337)', function ( t ) {
+    t.is( uniqPort( 31337 ), 50433 );
+})
 
 incorrectValues.forEach( function ( type ) {
 
