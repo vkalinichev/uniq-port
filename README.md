@@ -12,7 +12,7 @@
 [librariesio]: https://img.shields.io/librariesio/github/vkalinichev/uniq-port.svg
 [libraries.io]: https://libraries.io/npm/uniq-port
 
-Generates an unique port-number for in safe range (1025-65535) 
+Generates a string-based unique port number in a [safe range](http://stackoverflow.com/a/218860/4974102)
 
 ## Install
 #### NPM
@@ -26,8 +26,8 @@ yarn add uniq-port
 
 ## Usage
 ```js
-import uniqPort from 'uniq-port'
+const uniqPort = require( 'uniq-port' )
 
-uniqPort( 'your-unique-app-name' ) //-> 9629
-uniqPort( 'uniq-port' ) //-> 64451
+uniqPort( 'your-unique-app-name' ) //-> 65293
+uniqPort( 'uniq-port' ) //-> 54115
 ```

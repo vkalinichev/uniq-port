@@ -5,27 +5,32 @@ var uniqPort = require( '.' )
 
 test( 'generate port for `uniq-port`', function ( t ) {
     var actual = uniqPort( 'uniq-port' )
-    t.is( actual, 64451 )
+    t.is( actual, 54115 )
+})
+
+test( 'generate port for `your-unique-app-name`', function ( t ) {
+    var actual = uniqPort( 'your-unique-app-name' )
+    t.is( actual, 65293 )
 })
 
 test( 'generate port for `uniq`', function ( t ) {
     var actual = uniqPort( 'uniq' )
-    t.is( actual, 22057 )
+    t.is( actual, 56645 )
 })
 
 test( 'generate port for `port`', function ( t ) {
     var actual = uniqPort( 'port' )
-    t.is( actual, 4167 )
+    t.is( actual, 49619 )
 })
 
 test( 'generate port for an empty string', function ( t ) {
     var actual = uniqPort( '' )
-    t.is( actual, 1025 )
+    t.is( actual, 49152 )
 })
 
 test( 'generate port for number', function ( t ) {
     var actual = uniqPort( 31337 )
-    t.is( actual, 62427 )
+    t.is( actual, 50433 )
 })
 
 test( 'throw an error on object', function ( t ) {

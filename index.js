@@ -1,6 +1,6 @@
 'use strict'
 
-var MIN = 1025
+var MIN = 49152
 var MAX = 65535
 
 module.exports = function uniqPort( string ) {
