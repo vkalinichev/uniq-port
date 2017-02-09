@@ -1,10 +1,11 @@
 {
   "name": "uniq-port",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a string-based unique port number",
+  "keywords": [ "port", "tcp", "port-number", "generator", "unique", "hash" ],
   "main": "index.js",
   "scripts": {
-    "coverage": "nyc --reporter lcov ava &&codecov",
+    "coverage": "nyc --reporter lcov ava && codecov",
     "test": "nyc ava"
   },
   "files": [
