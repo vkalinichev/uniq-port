@@ -1,4 +1,4 @@
-# <img src="assets/uniq-port-logo.svg"/> uniq-port [![npm][npm]][npmjs.org] [![build][travis]][travis-ci.org] [![coverage][codecov]][codecov.io] [![dependencies][librariesio]][libraries.io]
+# <img src="https://cdn.rawgit.com/vkalinichev/uniq-port/87c37dd574d65d95b4225e47204ce77746ea30b7/assets/uniq-port-logo.svg"/> uniq-port [![npm][npm]][npmjs.org] [![build][travis]][travis-ci.org] [![coverage][codecov]][codecov.io] [![dependencies][librariesio]][libraries.io]
 
 [npm]: https://img.shields.io/npm/v/uniq-port.svg?colorB=44cc11
 [npmjs.org]: https://www.npmjs.com/package/uniq-port
